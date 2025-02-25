@@ -1,0 +1,64 @@
+-- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+--
+-- Host: localhost    Database: project_fantasy
+-- ------------------------------------------------------
+-- Server version	8.0.32
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `stat`
+--
+
+DROP TABLE IF EXISTS `stat`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `stat` (
+  `player` varchar(28) DEFAULT NULL,
+  `matches` int DEFAULT NULL,
+  `runs` int DEFAULT NULL,
+  `100s` int DEFAULT NULL,
+  `50s` int DEFAULT NULL,
+  `batavg` float DEFAULT NULL,
+  `strike_rate` int DEFAULT NULL,
+  `wickets` int DEFAULT NULL,
+  `bwlavg` float DEFAULT NULL,
+  `4WI` int DEFAULT NULL,
+  `economy` float DEFAULT NULL,
+  `catch` int DEFAULT NULL,
+  `stump` int DEFAULT NULL,
+  `value` int DEFAULT NULL,
+  `category` varchar(14) DEFAULT NULL,
+  `team` varchar(14) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `stat`
+--
+
+LOCK TABLES `stat` WRITE;
+/*!40000 ALTER TABLE `stat` DISABLE KEYS */;
+INSERT INTO `stat` VALUES ('Kohli',182,8337,35,49,56,106,4,163,0,6.23,106,0,100,'BAT','IND'),('Shubhman',23,847,3,5,46.07,99,0,0,0,0,14,0,95,'BAT','IND'),('Ruturaj',14,511,2,4,42.56,99,0,0,0,0,7,0,90,'BAT','IND'),('Rahane',86,3289,8,5,49.14,93,0,0,0,0,56,0,95,'BAT','IND'),('Dhoni',210,7735,14,56,39.98,89,2,165.99,0,5.86,256,35,100,'WK','IND'),('Pandya',53,1956,4,24,37.42,101,31,35.64,0,5.62,12,0,95,'AR','IND'),('Jadeja',133,4235,9,56,35.63,85,105,32.45,7,4.65,32,0,100,'AR','IND'),('Kartik',77,2869,5,21,40.69,79,0,0,0,0,21,5,80,'WK','IND'),('Aksar',35,1243,2,28,12.87,86,28,37.55,0,5.32,8,0,85,'AR','IND'),('Ashwin',111,789,1,18,5.09,68,114,31.27,6,4.98,5,0,90,'BWL','IND'),('Bhuwneshwar',67,256,0,7,4.26,45,65,34.81,4,5.84,2,0,85,'BWL','IND'),('Bumrah',21,103,0,4,5.67,42,35,38.11,2,4.56,4,0,90,'BWL','IND'),('Shami',78,77,0,1,1.16,33,69,36.78,1,5.74,6,0,85,'BWL','IND'),('Deepak',29,86,0,0,3.34,27,26,33.58,0,6.51,3,0,80,'BWL','IND'),('Umesh',70,147,0,0,2.47,39,63,34.63,3,6.02,15,0,80,'BWL','IND');
+/*!40000 ALTER TABLE `stat` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-06-27 12:04:25
